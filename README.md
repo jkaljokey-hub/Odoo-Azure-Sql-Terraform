@@ -23,40 +23,7 @@ Remote Terraform backend (Azure Storage)
 
 The entire infrastructure is automated using Terraform modules for clean separation and reusability.
 
-📁 Project Structure
-Code
-terraform-erp-azure/
-├── main.tf
-├── backend.tf
-├── providers.tf
-├── versions.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
-├── .gitignore
-├── hcp-pipeline.yml
-└── modules/
-    ├── network/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   ├── outputs.tf
-    ├── vm/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   ├── outputs.tf
-    ├── sql/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   ├── outputs.tf
-    ├── bastion/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   ├── outputs.tf
-    └── monitor/
-        ├── main.tf
-        ├── variables.tf
-        ├── outputs.tf
-☁️ Architecture Overview
+## ☁️ Architecture Overview
 This deployment creates:
 
 A Virtual Network with private subnets
@@ -73,7 +40,7 @@ Monitoring + Alerts for SQL and VM
 
 Remote Terraform backend stored in Azure Storage
 
-🔐 Remote Backend Configuration (Azure Storage)
+### 🔐 Remote Backend Configuration (Azure Storage)
 The project uses Azure Storage for Terraform state:
 
 hcl
@@ -95,7 +62,7 @@ Versioning
 
 Locking
 
-🧩 Modules Included
+### 🧩 Modules Included
 1. Network Module
 Creates:
 
@@ -150,7 +117,7 @@ Azure subscription
 
 Storage account for backend
 
-🔑 Variables
+### 🔑 Variables
 Defined in variables.tf:
 
 location
@@ -174,7 +141,7 @@ Example:
 hcl
 admin_password      = "YourStrongPassword123!"
 sql_admin_password  = "YourStrongPassword123!"
-▶️ Deployment Steps
+### ▶️ Deployment Steps
 1. Initialize Terraform
 Code
 terraform init
@@ -187,7 +154,7 @@ terraform plan
 4. Apply
 Code
 terraform apply -auto-approve
-📡 Outputs
+### 📡 Outputs
 After deployment, Terraform prints:
 
 Odoo VM private IP
@@ -196,7 +163,7 @@ SQL Server name
 
 Bastion name
 
-📊 Monitoring & Observability
+### 📊 Monitoring & Observability
 The monitoring module configures:
 
 SQL CPU alerts
@@ -205,7 +172,7 @@ Diagnostic logs
 
 Metrics for performance
 
-🔒 Security Highlights
+### 🔒 Security Highlights
 No public IP on VM
 
 Bastion for secure access
@@ -216,7 +183,7 @@ SQL firewall + private networking
 
 State stored in Azure Storage
 
-🧠 Purpose of This Project
+### 🧠 Purpose of This Project
 This project demonstrates:
 
 Professional Terraform modular design

@@ -2,7 +2,8 @@
 This project deploys a complete ERP-ready cloud environment on Microsoft Azure using Terraform, following a fully modular, production-grade architecture.
 ## 📊 Architecture Diagram
 
-![ERP Azure Architecture](https://github.com/jkaljokey-hub/Odoo-Azure-Sql-Terraform/blob/main/assets/Copilot_20260415_221916.png?raw=true)
+![ERP Azure Architecture]
+(https://github.com/jkaljokey-hub/Odoo-Azure-Sql-Terraform/blob/main/ChatGPT%20Image%20Apr%2016,%202026,%2012_10_35%20PM.png?raw=true)
 
 
 It includes:

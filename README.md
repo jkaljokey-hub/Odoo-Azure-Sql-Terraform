@@ -194,11 +194,5 @@ Infrastructure-as-Code automation
 
 Real-world cloud engineering practices
 
-Perfect for:
 
-Cloud Engineer portfolio
-
-Azure Administrator showcase
-
-Terraform IaC demonstration
 

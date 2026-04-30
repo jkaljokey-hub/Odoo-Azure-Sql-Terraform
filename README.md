@@ -1,4 +1,5 @@
-🚀 ERP System on Azure — Terraform Infrastructure (Odoo + Azure SQL + Bastion + Monitoring)
+# 🚀 ERP System on Azure — Terraform Infrastructure (Odoo + Azure SQL + Bastion + Monitoring)
+
 This project deploys a complete ERP-ready cloud environment on Microsoft Azure using Terraform, following a fully modular, production-grade architecture.
 ## 📊 Architecture Diagram
 
